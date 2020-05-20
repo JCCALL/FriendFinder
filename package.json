@@ -1,19 +1,27 @@
 {
   "name": "friendfinder",
-  "version": "1.0.0",
-  "description": "app to find a friend based on commonalites",
-  "main": "server.js",
+  "version": "1.0.1",
+  "description": "app to find a friend",
+  "main": "node server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "n/a",
     "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/JCCALL/FriendFinder.git"
   },
+  "keywords": [
+    "friend"
+  ],
   "author": "Jordan Call",
   "license": "ISC",
   "bugs": {
-    
-  
+    "url": "https://github.com/JCCALL/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/JCCALL/FriendFinder#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  }
 }
