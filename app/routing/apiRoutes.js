@@ -7,14 +7,29 @@ module.exports = function (app) {
   });
 
   app.post("/api/friends", function (req, res) {
-    // req.body hosts is equal to the JSON post sent from the user
-    // This works because of our body parsing middleware
-    var newCharacter = req.body;
+   
+    var scores = [];
 
-    console.log(newCharacter);
+    for (var i = 0; i < friends.length; i++) {
+        var total = 0;
+        for( var j = 0; j < friends[i].score.length; j++) {
+            total += Math.abs(req.body.score[j] - friends[i].score[j]);
+        }
+        scores.push(total);
+    }
 
-    friends.push(newCharacter);
+    var index = 0;
+    var small = scores[0];
 
-    res.json(newCharacter);
+    for (var k = 1; k < scores.length; k++) {
+        if (scores[k] < small) {
+            index = k;
+            small = scores[k];
+        }
+    }
+
+    friends.push(req.body);
+
+    res.send(friends[index]);
   });
 };

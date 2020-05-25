@@ -15,12 +15,12 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-
-    <title>Find a Friend Questionaire!</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <title>Find a Friend Questionaire!</title> 
   </head>
-  <body>
+  <body class="bg-secondary">
     <div class="container">
-      <div class="jumbotron bg-secondary">
+      <div class="jumbotron bg-primary">
         <h1 class="display-1 text-center text-white">Friend Finder</h1>
         <p class="lead text-center text-white">
           Answer a few questions and we will tell you who your most compatible
@@ -42,8 +42,10 @@
                     class="form-control validate"
                     placeholder="John McGuffin"
                   />
+                  <br>
                   <label for="input2">Photo: (Optional)</label>
                   <input id="link" type="url" class="form-control" />
+                  <hr>
                 </div>
               </div>
             </div>
@@ -52,56 +54,56 @@
                 <div class="form-group">
                   <label for="exampleFormControlSelect1">1.</label>
                   <h6>Do you do things just for fun?</h6>
-                  <select class="form-control" id="exampleFormControlSelect1">
+                  <select class="form-control" id="q1">
                     <option value="1">1 (Strongly Agree)</option>
                     <option value="2">2</option>
                     <option value="3" selected>3</option>
                     <option value="4">4</option>
-                    <option value="5">5 (Strongly Disagree</option>
+                    <option value="5">5 (Strongly Disagree)</option>
                   </select>
                 </div>
                 <div class="form-group">
                   <label for="exampleFormControlSelect1">2.</label>
                   <h6>Baseball is the best sport of all time.</h6>
-                  <select class="form-control" id="exampleFormControlSelect1">
+                  <select class="form-control" id="q2">
                     <option value="1">1 (Strongly Agree)</option>
                     <option value="2">2</option>
                     <option value="3" selected>3</option>
                     <option value="4">4</option>
-                    <option value="5">5 (Strongly Disagree</option>
+                    <option value="5">5 (Strongly Disagree)</option>
                   </select>
                 </div>
                 <div class="form-group">
                   <label for="exampleFormControlSelect1">3.</label>
                   <h6>I prefer to read the book instead of watch the movie.</h6>
-                  <select class="form-control" id="exampleFormControlSelect1">
+                  <select class="form-control" id="q3">
                     <option value="1">1 (Strongly Agree)</option>
                     <option value="2">2</option>
                     <option value="3" selected>3</option>
                     <option value="4">4</option>
-                    <option value="5">5 (Strongly Disagree</option>
+                    <option value="5">5 (Strongly Disagree)</option>
                   </select>
                 </div>
                 <div class="form-group">
                   <label for="exampleFormControlSelect1">4.</label>
                   <h6>I live in a fantasy world.</h6>
-                  <select class="form-control" id="exampleFormControlSelect1">
+                  <select class="form-control" id="q4">
                     <option value="1">1 (Strongly Agree)</option>
                     <option value="2">2</option>
                     <option value="3" selected>3</option>
                     <option value="4">4</option>
-                    <option value="5">5 (Strongly Disagree</option>
+                    <option value="5">5 (Strongly Disagree)</option>
                   </select>
                 </div>
                 <div class="form-group">
                   <label for="exampleFormControlSelect1">5.</label>
                   <h6>The Beatles are the greatest thing to happen to pop music.</h6>
-                  <select class="form-control" id="exampleFormControlSelect1">
+                  <select class="form-control" id="q5">
                     <option value="1">1 (Strongly Agree)</option>
                     <option value="2">2</option>
                     <option value="3" selected>3</option>
                     <option value="4">4</option>
-                    <option value="5">5 (Strongly Disagree</option>
+                    <option value="5">5 (Strongly Disagree)</option>
                   </select>
                 </div>
               </div>
@@ -109,102 +111,131 @@
                 <div class="form-group">
                   <label for="exampleFormControlSelect1">6.</label>
                   <h6>Han shot first.</h6>
-                  <select class="form-control" id="exampleFormControlSelect1">
+                  <select class="form-control" id="q6">
                     <option value="1">1 (Strongly Agree)</option>
                     <option value="2">2</option>
                     <option value="3" selected>3</option>
                     <option value="4">4</option>
-                    <option value="5">5 (Strongly Disagree</option>
+                    <option value="5">5 (Strongly Disagree)</option>
                   </select>
                 </div>
                 <div class="form-group">
                   <label for="exampleFormControlSelect1">7.</label>
                   <h6>The Steelers are the Raiders of the east.</h6>
-                  <select class="form-control" id="exampleFormControlSelect1">
+                  <select class="form-control" id="q7">
                     <option value="1">1 (Strongly Agree)</option>
                     <option value="2">2</option>
                     <option value="3" selected>3</option>
                     <option value="4">4</option>
-                    <option value="5">5 (Strongly Disagree</option>
+                    <option value="5">5 (Strongly Disagree)</option>
                   </select>
                 </div>
                 <div class="form-group">
                   <label for="exampleFormControlSelect1">8.</label>
                   <h6>Tacos are sandwiches.</h6>
-                  <select class="form-control" id="exampleFormControlSelect1">
+                  <select class="form-control" id="q8">
                     <option value="1">1 (Strongly Agree)</option>
                     <option value="2">2</option>
                     <option value="3" selected>3</option>
                     <option value="4">4</option>
-                    <option value="5">5 (Strongly Disagree</option>
+                    <option value="5">5 (Strongly Disagree)</option>
                   </select>
                 </div>
                 <div class="form-group">
                   <label for="exampleFormControlSelect1">9.</label>
-                  <h6></h6>
-                  <select class="form-control" id="exampleFormControlSelect1">
+                  <h6>You choose hard work over being lazy.</h6>
+                  <select class="form-control" id="q9">
                     <option value="1">1 (Strongly Agree)</option>
                     <option value="2">2</option>
                     <option value="3" selected>3</option>
                     <option value="4">4</option>
-                    <option value="5">5 (Strongly Disagree</option>
+                    <option value="5">5 (Strongly Disagree)</option>
                   </select>
                 </div>
                 <div class="form-group">
                   <label for="exampleFormControlSelect1">10.</label>
-                  <h6></h6>
-                  <select class="form-control" id="exampleFormControlSelect1">
+                  <h6>Dolls are creepy.</h6>
+                  <select class="form-control" id="q10">
                     <option value="1">1 (Strongly Agree)</option>
                     <option value="2">2</option>
                     <option value="3" selected>3</option>
                     <option value="4">4</option>
-                    <option value="5">5 (Strongly Disagree</option>
+                    <option value="5">5 (Strongly Disagree)</option>
                   </select>
                 </div>
               </div>
             </div>
+            <br>
+            <buton id="submit" type="submit" class="btn btn-success btn-block">Find Your Friend</buton>
           </div>
         </div>
       </form>
+      <footer class="text-white">
+        <a href="/api/friends" class="text-white">API Friends</a> ~|~ <a href="https://github.com/JCCALL/FriendFinder.git" class="text-white">github</a>
+    </footer>
     </div>
+    <div id="myModal" class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title">Your new Friend</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  <p id="bestFriend">Modal body text goes here.</p>
+                  <img id="photo" src="#" alt="Your new best friend." style="height: 250px; width: 300px;">
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+          </div>
+      </div>
+  </div>
     <!-- Optional JavaScript -->
     <script type="text/javascript">
-      $(".submit").on("click", function () {
-        event.preventDefault();
-        // Here we grab the form elements
-        var newReservation = {
-          name: $("#reserve_name").val().trim(),
-          phone: $("#reserve_phone").val().trim(),
-          partysize: $("#reserve_party").val().trim(),
-          uniqueID: $("#reserve_uniqueID").val().trim(),
+      $(document).ready(function () {
+        $("#myModal").modal("hide");
+
+        function formValidation() {
+            var isValid = true;
+            $('.validate').each(function () {
+                if ($(this).val() === '') {
+                    isValid = false;
+                };
+            });
+            return isValid;
         };
 
-        console.log(newReservation);
+        $("#submit").click(function () {
+            event.preventDefault();
+            if (formValidation() == true) {
 
-        $.post("/api/tables", newReservation, function (data) {
-          if (data === "Reserve") {
-            alert("You are officially booked!");
-          } else if (data === "Waitlist") {
-            alert("Sorry you are on the wait list");
-          } else {
-            alert("error");
-          }
+                var data = {
+                    name: $("#name").val().trim(),
+                    photo: $("#link").val().trim(),
+                    score: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(),
+                    $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val(),]
+                };
+                console.log(data);
+                $.post("/api/friends", data, function (res) {
+                    $("#bestFriend").text(res.name);
+                    $("#photo").attr("src", res.photo);
+                    $("#myModal").modal("show");
+                });
 
-          $("#reserve_name").val("");
-          $("#reserve_phone").val("");
-          $("#reserve_party").val("");
-          $("#reserve_uniqueID").val("");
+            } else if (formValidation() == false) {
+                alert("Please fill out all fields before submitting!");
+            } else {
+                alert("Something went wrong, try again.");
+            }
+            $("#name").val("");
         });
-
-        return false;
-      });
+    })
     </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
       integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
